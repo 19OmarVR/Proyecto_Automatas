@@ -78,8 +78,8 @@ namespace Proyecto_Automatas
                 case 2:
                     //Agrega un Nodo
                     nodo = new Nodo(e.Location);
-                    ListaNodos.Add(new Nodo(e.Location));
                     nodo.Color = Color.Gold;
+                    ListaNodos.Add(nodo);
                     nodo.Dibujar(Pizarra.CreateGraphics());
                     break;
                 case 3:
