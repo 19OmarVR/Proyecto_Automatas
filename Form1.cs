@@ -73,7 +73,7 @@ namespace Proyecto_Automatas
 
         private void Pizarra_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
         }
 
         private void Pizarra_Paint(object sender, PaintEventArgs e)
@@ -83,7 +83,7 @@ namespace Proyecto_Automatas
             {
                 a.Dibujar(g);
             }
-                
+
             foreach (Nodo n in ListaNodos)
             {
                 n.Dibujar(g);
@@ -192,13 +192,14 @@ namespace Proyecto_Automatas
 
         private void Pizarra_MouseUp(object sender, MouseEventArgs e)
         {
-            if(estado == 1 && arrastrando)
+            //Hola
+            if (estado == 1 && arrastrando)
             {
                 nodo.Color = Color.Gold;
                 nodo.Dibujar(Pizarra.CreateGraphics());
                 arrastrando = false;
             }
-            
+
         }
     }
 }
