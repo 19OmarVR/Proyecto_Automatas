@@ -17,19 +17,20 @@ namespace Proyecto_Automatas
         private Rectangle rect;
         private Color c;
         private bool inicial;
+        private bool final;
         private static int cont = 0;
         //Metodos
         public Nodo(Point coordenada)
-        { 
+        {
             this.coordenada = coordenada;
             nombre = "q" + cont;
             rect = new Rectangle(coordenada.X - radio, coordenada.Y - radio, 2 * radio, 2 * radio);
             inicial = false;
             cont++;
         }
-        
+
         //Metodos get y set
-        public Rectangle Rect{ get {return rect;} }
+        public Rectangle Rect { get { return rect; } }
         public Point Coordenada { get { return coordenada; } }
         public Color Color { set { c = value; } }
 
@@ -65,6 +66,6 @@ namespace Proyecto_Automatas
             // Crea una arista que conecta este nodo con otro nodo
             return new Arista(this, otroNodo, valor);
         }
-        
+
     }
 }

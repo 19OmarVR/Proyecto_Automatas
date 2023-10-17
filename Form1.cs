@@ -73,8 +73,50 @@ namespace Proyecto_Automatas
 
         private void Pizarra_MouseClick(object sender, MouseEventArgs e)
         {
+            
+        }
+
+        private void Pizarra_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            foreach (Arista a in ListaAristas)
+            {
+                a.Dibujar(g);
+            }
+                
+            foreach (Nodo n in ListaNodos)
+            {
+                n.Dibujar(g);
+            }
+        }
+
+        private void Pizarra_MouseDown(object sender, MouseEventArgs e)
+        {
             switch (estado)
             {
+                case 1:
+                    //Seleccionar
+                    if (e.Button == MouseButtons.Left)
+                    {
+                        // Verificar si el clic está dentro del nodo
+                        foreach (Nodo n in ListaNodos)
+                        {
+                            if (n.EstaDentro(e.X, e.Y))
+                            {
+                                nodo = n;
+                                nodo.Color = Color.DeepSkyBlue;
+                                arrastrando = true;
+                                Pizarra.Invalidate();
+                                break;
+                            }
+                        }
+                    }
+                    else if (e.Button == MouseButtons.Right)
+                    {
+
+                    }
+
+                    break;
                 case 2:
                     //Agrega un Nodo
                     nodo = new Nodo(e.Location);
@@ -109,41 +151,13 @@ namespace Proyecto_Automatas
                         }
                     }
                     break;
-            }
-        }
-
-        private void Pizarra_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics g = e.Graphics;
-            foreach (Arista a in ListaAristas)
-            {
-                a.Dibujar(g);
-            }
-
-            foreach (Nodo n in ListaNodos)
-            {
-                n.Dibujar(g);
-            }
-        }
-
-        private void Pizarra_MouseDown(object sender, MouseEventArgs e)
-        {
-            if(e.Button == MouseButtons.Left)
-            {
-                if (estado == 1 || estado == 4)
-                {
+                case 4:
                     // Verificar si el clic está dentro del nodo
                     foreach (Nodo n in ListaNodos)
                     {
                         if (n.EstaDentro(e.X, e.Y))
                         {
-                            if(estado == 1)
-                            {
-                                nodo = n;
-                                nodo.Color = Color.DeepSkyBlue;
-                                arrastrando = true;
-                            }
-                            else if(Elegido == false)
+                            if (Elegido == false)
                             {
                                 nodo = n;
                                 Elegido = true;
@@ -161,11 +175,7 @@ namespace Proyecto_Automatas
                             break;
                         }
                     }
-                }
-            }
-            else if(e.Button == MouseButtons.Right)
-            {
-
+                    break;
             }
         }
 
