@@ -71,7 +71,6 @@
             Barra_Archivo.Name = "Barra_Archivo";
             Barra_Archivo.Size = new Size(93, 29);
             Barra_Archivo.Text = "Archivo";
-            Barra_Archivo.ButtonClick += Barra_Archivo_ButtonClick;
             // 
             // nuevoToolStripMenuItem
             // 
