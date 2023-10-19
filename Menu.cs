@@ -15,11 +15,26 @@ namespace Proyecto_Automatas
         public Menu()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
-        private void Menu_Load(object sender, EventArgs e)
+        //funcion para Salir del Programa
+        private void BT_Salir_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        //Boton para 
+        private void BT_Ajustes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Funcion no disponible por el momento");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 diseñor = new Form1();
+            diseñor.Show();
+            this.Hide();
         }
     }
 }
