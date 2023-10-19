@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omarv\\Source\\Repos\\Proyecto_Automatas\\Proyecto_Automatas.csproj": {}
+    "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omarv\\Source\\Repos\\Proyecto_Automatas\\Proyecto_Automatas.csproj": {
+    "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omarv\\Source\\Repos\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
+        "projectUniqueName": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
         "projectName": "Proyecto_Automatas",
-        "projectPath": "C:\\Users\\omarv\\Source\\Repos\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
+        "projectPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
         "packagesPath": "C:\\Users\\omarv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarv\\Source\\Repos\\Proyecto_Automatas\\obj\\",
+        "outputPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\omarv\\AppData\\Roaming\\NuGet\\NuGet.Config",

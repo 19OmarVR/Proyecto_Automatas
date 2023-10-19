@@ -32,8 +32,10 @@ namespace Proyecto_Automatas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 diseñor = new Form1();
-            diseñor.Show();
+            //Form1 diseño = new Form1();
+            //diseño.Show();
+            Diseñador nfa  = new Diseñador();
+            nfa.Show();
             this.Hide();
         }
     }
