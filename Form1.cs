@@ -13,7 +13,9 @@ namespace Proyecto_Automatas
             3.- Eliminar
             4.- Conectar
          */
+        //Lista de nodos
         private List<Nodo> ListaNodos = new List<Nodo>();
+        //Lista de aristas
         private List<Arista> ListaAristas = new List<Arista>();
         private bool arrastrando = false;
         private bool Elegido = false;
@@ -24,15 +26,15 @@ namespace Proyecto_Automatas
         public Form1()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;//Abre la pantalla completa al inicializar la aplicacion
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;//Abre la pantalla completa al inicializar la aplicacion
             Editor_Seleccionar.BackColor = Color.SkyBlue;
         }
 
-        //----------------------------------------------------------- Botones del editor --------------------------------------------------------------------
+        #region Botones de edicion
         private void Editor_Seleccionar_Click(object sender, EventArgs e)
         {
             estado = 1;
@@ -68,9 +70,9 @@ namespace Proyecto_Automatas
             Editor_Eliminar.BackColor = Color.Transparent;
             Editor_Conectar.BackColor = Color.SkyBlue;
         }
+        #endregion
 
-        //----------------------------------------------------------- Dibujo del automata --------------------------------------------------------------------
-
+        #region Dibujo de Automata
         private void Pizarra_MouseClick(object sender, MouseEventArgs e)
         {
 
@@ -94,16 +96,21 @@ namespace Proyecto_Automatas
         {
             switch (estado)
             {
+
+                //Seleccionar
                 case 1:
-                    //Seleccionar
+                    //Click izquierdo
                     if (e.Button == MouseButtons.Left)
                     {
-                        // Verificar si el clic está dentro del nodo
+                        // Verificar en cual nodo estas dando click
                         foreach (Nodo n in ListaNodos)
                         {
+                            //Verifica que el click sea en el nodo 
                             if (n.EstaDentro(e.X, e.Y))
                             {
+                                //Guardamos el nodo que estamos moviendo
                                 nodo = n;
+                                //Cambia de color el nodo a azul
                                 nodo.Color = Color.DeepSkyBlue;
                                 arrastrando = true;
                                 Pizarra.Invalidate();
@@ -113,19 +120,21 @@ namespace Proyecto_Automatas
                     }
                     else if (e.Button == MouseButtons.Right)
                     {
-
+                        //click derecho
                     }
 
                     break;
+
+                //Agrega un Nodo
                 case 2:
-                    //Agrega un Nodo
                     nodo = new Nodo(e.Location);
                     nodo.Color = Color.Gold;
                     ListaNodos.Add(nodo);
                     nodo.Dibujar(Pizarra.CreateGraphics());
                     break;
+
+                //Elimina un nodo y/o arista
                 case 3:
-                    //Elimina un nodo y/o arista
                     foreach (Nodo n in ListaNodos)//Eliminar un nodo al hacer clic
                     {
                         if (n.EstaDentro(e.X, e.Y))
@@ -178,6 +187,7 @@ namespace Proyecto_Automatas
                     break;
             }
         }
+        #endregion
 
         private void Pizarra_MouseMove(object sender, MouseEventArgs e)
         {
@@ -192,7 +202,6 @@ namespace Proyecto_Automatas
 
         private void Pizarra_MouseUp(object sender, MouseEventArgs e)
         {
-            //Hola
             if (estado == 1 && arrastrando)
             {
                 nodo.Color = Color.Gold;
@@ -201,5 +210,6 @@ namespace Proyecto_Automatas
             }
 
         }
+
     }
 }
