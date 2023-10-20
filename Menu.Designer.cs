@@ -104,6 +104,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Menu";
             Text = "Menu";
+            FormClosing += Menu_FormClosing;
             ((System.ComponentModel.ISupportInitialize)BT_Ajustes).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_Salir).EndInit();
             ResumeLayout(false);

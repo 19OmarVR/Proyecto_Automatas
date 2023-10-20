@@ -34,9 +34,14 @@ namespace Proyecto_Automatas
         {
             //Form1 diseño = new Form1();
             //diseño.Show();
-            Diseñador nfa  = new Diseñador();
+            Diseñador nfa = new Diseñador();
             nfa.Show();
             this.Hide();
+        }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

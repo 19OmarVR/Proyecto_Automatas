@@ -100,7 +100,7 @@
             Tabla_Propiedades.Controls.Add(TB_Propiedades_Radio, 1, 3);
             Tabla_Propiedades.Controls.Add(BT_Propiedades_Guardar, 1, 4);
             Tabla_Propiedades.Dock = DockStyle.Right;
-            Tabla_Propiedades.Location = new Point(729, 22);
+            Tabla_Propiedades.Location = new Point(724, 22);
             Tabla_Propiedades.Name = "Tabla_Propiedades";
             Tabla_Propiedades.RowCount = 6;
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
@@ -110,7 +110,7 @@
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            Tabla_Propiedades.Size = new Size(261, 515);
+            Tabla_Propiedades.Size = new Size(266, 515);
             Tabla_Propiedades.TabIndex = 1;
             // 
             // label1
@@ -167,7 +167,7 @@
             TB_Propiedades_Nombre.Enabled = false;
             TB_Propiedades_Nombre.Location = new Point(129, 33);
             TB_Propiedades_Nombre.Name = "TB_Propiedades_Nombre";
-            TB_Propiedades_Nombre.Size = new Size(129, 23);
+            TB_Propiedades_Nombre.Size = new Size(134, 23);
             TB_Propiedades_Nombre.TabIndex = 4;
             // 
             // CB_Propiedades_Color
@@ -178,7 +178,7 @@
             CB_Propiedades_Color.Items.AddRange(new object[] { "Gold", "LightGreen", "IndianRed", "LightGray", "LightBlue" });
             CB_Propiedades_Color.Location = new Point(129, 63);
             CB_Propiedades_Color.Name = "CB_Propiedades_Color";
-            CB_Propiedades_Color.Size = new Size(129, 23);
+            CB_Propiedades_Color.Size = new Size(134, 23);
             CB_Propiedades_Color.TabIndex = 5;
             // 
             // TB_Propiedades_Radio
@@ -187,7 +187,7 @@
             TB_Propiedades_Radio.Enabled = false;
             TB_Propiedades_Radio.Location = new Point(129, 93);
             TB_Propiedades_Radio.Name = "TB_Propiedades_Radio";
-            TB_Propiedades_Radio.Size = new Size(129, 23);
+            TB_Propiedades_Radio.Size = new Size(134, 23);
             TB_Propiedades_Radio.TabIndex = 6;
             // 
             // BT_Propiedades_Guardar
@@ -196,7 +196,7 @@
             BT_Propiedades_Guardar.Enabled = false;
             BT_Propiedades_Guardar.Location = new Point(129, 123);
             BT_Propiedades_Guardar.Name = "BT_Propiedades_Guardar";
-            BT_Propiedades_Guardar.Size = new Size(129, 24);
+            BT_Propiedades_Guardar.Size = new Size(134, 24);
             BT_Propiedades_Guardar.TabIndex = 7;
             BT_Propiedades_Guardar.Text = "Guardar Cambios";
             BT_Propiedades_Guardar.UseVisualStyleBackColor = true;
@@ -209,7 +209,7 @@
             Pizzarra.Dock = DockStyle.Fill;
             Pizzarra.Location = new Point(0, 22);
             Pizzarra.Name = "Pizzarra";
-            Pizzarra.Size = new Size(729, 515);
+            Pizzarra.Size = new Size(724, 515);
             Pizzarra.TabIndex = 2;
             Pizzarra.MouseClick += Pizzarra_MouseClick;
             // 
@@ -219,7 +219,7 @@
             Menu_Pizzarra.Items.AddRange(new ToolStripItem[] { Pizzarra_Menu_Seleccionar, Pizzarra_Menu_Agregar, Pizzarra_Menu_Conectar, Pizzarra_Menu_Eliminar });
             Menu_Pizzarra.Location = new Point(0, 0);
             Menu_Pizzarra.Name = "Menu_Pizzarra";
-            Menu_Pizzarra.Size = new Size(729, 22);
+            Menu_Pizzarra.Size = new Size(724, 22);
             Menu_Pizzarra.TabIndex = 0;
             Menu_Pizzarra.Text = "statusStrip2";
             // 
@@ -265,6 +265,7 @@
             Controls.Add(statusStrip1);
             Name = "Diseñador";
             Text = "Diseñador";
+            FormClosing += Diseñador_FormClosing;
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             Tabla_Propiedades.ResumeLayout(false);

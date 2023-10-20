@@ -24,9 +24,8 @@ namespace Proyecto_Automatas
         public Diseñador()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
-
-
 
         //Funcion para Regresar al Menu de inicio
         private void General_Menu_Regresar_Click(object sender, EventArgs e)
@@ -329,6 +328,11 @@ namespace Proyecto_Automatas
             TB_Propiedades_Nombre.Enabled = false;
             CB_Propiedades_Color.Enabled = false;
             TB_Propiedades_Nombre.Enabled = false;
+        }
+
+        private void Diseñador_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
