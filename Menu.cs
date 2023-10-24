@@ -12,6 +12,7 @@ namespace Proyecto_Automatas
 {
     public partial class Menu : Form
     {
+        //Funcion Inicial
         public Menu()
         {
             InitializeComponent();
@@ -24,21 +25,21 @@ namespace Proyecto_Automatas
             Application.Exit();
         }
 
-        //Boton para 
+        //Boton para Ajustes
         private void BT_Ajustes_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Funcion no disponible por el momento");
         }
 
+        //Funcion para Ir a DFA y NFA
         private void button1_Click(object sender, EventArgs e)
         {
-            //Form1 diseño = new Form1();
-            //diseño.Show();
             Diseñador nfa = new Diseñador();
             nfa.Show();
             this.Hide();
         }
 
+        //Salir del programa 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

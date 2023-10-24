@@ -133,6 +133,12 @@
   <data name="Archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Archivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\Circulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,7 +148,7 @@
   <data name="Ajustes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\src\Ajustes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\src\Circulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Final1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\src\Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

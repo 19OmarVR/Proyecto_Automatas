@@ -41,6 +41,12 @@
             CB_Propiedades_Color = new ComboBox();
             TB_Propiedades_Radio = new TextBox();
             BT_Propiedades_Guardar = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            label8 = new Label();
+            textBox1 = new TextBox();
+            CB_Propiedades_Inicial = new CheckBox();
+            CB_Propiedades_Final = new CheckBox();
             Pizzarra = new Panel();
             Menu_Pizzarra = new StatusStrip();
             Pizzarra_Menu_Seleccionar = new ToolStripStatusLabel();
@@ -98,17 +104,26 @@
             Tabla_Propiedades.Controls.Add(TB_Propiedades_Nombre, 1, 1);
             Tabla_Propiedades.Controls.Add(CB_Propiedades_Color, 1, 2);
             Tabla_Propiedades.Controls.Add(TB_Propiedades_Radio, 1, 3);
-            Tabla_Propiedades.Controls.Add(BT_Propiedades_Guardar, 1, 4);
+            Tabla_Propiedades.Controls.Add(BT_Propiedades_Guardar, 1, 6);
+            Tabla_Propiedades.Controls.Add(label5, 0, 4);
+            Tabla_Propiedades.Controls.Add(label6, 0, 5);
+            Tabla_Propiedades.Controls.Add(label8, 0, 7);
+            Tabla_Propiedades.Controls.Add(textBox1, 0, 8);
+            Tabla_Propiedades.Controls.Add(CB_Propiedades_Inicial, 1, 4);
+            Tabla_Propiedades.Controls.Add(CB_Propiedades_Final, 1, 5);
             Tabla_Propiedades.Dock = DockStyle.Right;
             Tabla_Propiedades.Location = new Point(724, 22);
             Tabla_Propiedades.Name = "Tabla_Propiedades";
-            Tabla_Propiedades.RowCount = 6;
+            Tabla_Propiedades.RowCount = 9;
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
-            Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            Tabla_Propiedades.RowStyles.Add(new RowStyle());
             Tabla_Propiedades.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             Tabla_Propiedades.Size = new Size(266, 515);
             Tabla_Propiedades.TabIndex = 1;
@@ -194,13 +209,84 @@
             // 
             BT_Propiedades_Guardar.Dock = DockStyle.Fill;
             BT_Propiedades_Guardar.Enabled = false;
-            BT_Propiedades_Guardar.Location = new Point(129, 123);
+            BT_Propiedades_Guardar.Location = new Point(129, 183);
             BT_Propiedades_Guardar.Name = "BT_Propiedades_Guardar";
             BT_Propiedades_Guardar.Size = new Size(134, 24);
-            BT_Propiedades_Guardar.TabIndex = 7;
+            BT_Propiedades_Guardar.TabIndex = 9;
             BT_Propiedades_Guardar.Text = "Guardar Cambios";
             BT_Propiedades_Guardar.UseVisualStyleBackColor = true;
             BT_Propiedades_Guardar.Click += BT_Propiedades_Guardar_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Dock = DockStyle.Fill;
+            label5.Font = new Font("Consolas", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(3, 120);
+            label5.Name = "label5";
+            label5.Padding = new Padding(5);
+            label5.Size = new Size(120, 30);
+            label5.TabIndex = 10;
+            label5.Text = "Inicial:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Dock = DockStyle.Fill;
+            label6.Font = new Font("Consolas", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(3, 150);
+            label6.Name = "label6";
+            label6.Padding = new Padding(5);
+            label6.Size = new Size(120, 30);
+            label6.TabIndex = 11;
+            label6.Text = "Final:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Dock = DockStyle.Fill;
+            label8.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(3, 210);
+            label8.Name = "label8";
+            label8.Padding = new Padding(5);
+            label8.Size = new Size(120, 30);
+            label8.TabIndex = 13;
+            label8.Text = "Conexiones";
+            // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(3, 243);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(120, 269);
+            textBox1.TabIndex = 14;
+            // 
+            // CB_Propiedades_Inicial
+            // 
+            CB_Propiedades_Inicial.AutoSize = true;
+            CB_Propiedades_Inicial.Dock = DockStyle.Fill;
+            CB_Propiedades_Inicial.Enabled = false;
+            CB_Propiedades_Inicial.Location = new Point(129, 123);
+            CB_Propiedades_Inicial.Name = "CB_Propiedades_Inicial";
+            CB_Propiedades_Inicial.Padding = new Padding(5);
+            CB_Propiedades_Inicial.Size = new Size(134, 24);
+            CB_Propiedades_Inicial.TabIndex = 15;
+            CB_Propiedades_Inicial.UseVisualStyleBackColor = true;
+            CB_Propiedades_Inicial.CheckedChanged += CB_Propiedades_Inicial_CheckedChanged;
+            // 
+            // CB_Propiedades_Final
+            // 
+            CB_Propiedades_Final.AutoSize = true;
+            CB_Propiedades_Final.Dock = DockStyle.Fill;
+            CB_Propiedades_Final.Enabled = false;
+            CB_Propiedades_Final.Location = new Point(129, 153);
+            CB_Propiedades_Final.Name = "CB_Propiedades_Final";
+            CB_Propiedades_Final.Padding = new Padding(5);
+            CB_Propiedades_Final.Size = new Size(134, 24);
+            CB_Propiedades_Final.TabIndex = 16;
+            CB_Propiedades_Final.UseVisualStyleBackColor = true;
+            CB_Propiedades_Final.CheckedChanged += CB_Propiedades_Final_CheckedChanged;
             // 
             // Pizzarra
             // 
@@ -299,5 +385,11 @@
         private ComboBox CB_Propiedades_Color;
         private TextBox TB_Propiedades_Radio;
         private Button BT_Propiedades_Guardar;
+        private Label label5;
+        private Label label6;
+        private Label label8;
+        private TextBox textBox1;
+        private CheckBox CB_Propiedades_Inicial;
+        private CheckBox CB_Propiedades_Final;
     }
 }

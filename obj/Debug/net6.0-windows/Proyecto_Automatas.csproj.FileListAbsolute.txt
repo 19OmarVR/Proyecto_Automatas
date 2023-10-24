@@ -80,7 +80,6 @@ C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\bin\Debug\n
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\bin\Debug\net6.0-windows\Proyecto_Automatas.pdb
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.csproj.AssemblyReference.cache
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.Diseñador.resources
-C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.Form1.resources
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.Menu.resources
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.Properties.Resources.resources
 C:\Users\omarv\OneDrive\Escritorio\Proyecto Final\Proyecto_Automatas\obj\Debug\net6.0-windows\Proyecto_Automatas.csproj.GenerateResource.cache
