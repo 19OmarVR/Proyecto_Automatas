@@ -135,6 +135,8 @@ namespace Proyecto_Automatas
                     // Establece un color de fondo (opcional)
                     pictureBox.BackColor = Color.Gold;
 
+                    pictureBox.Location = new Point(e.X - 25, e.Y - 25);
+
                     // Asigna un controlador de eventos a los pictureBox
                     pictureBox.MouseDown += PictureBox_MouseDown;
                     pictureBox.MouseUp += PictureBox_MouseUp;

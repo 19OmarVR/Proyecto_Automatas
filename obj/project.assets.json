@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
+      "projectUniqueName": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Automatas\\Proyecto_Automatas.csproj",
       "projectName": "Proyecto_Automatas",
-      "projectPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\Proyecto_Automatas.csproj",
+      "projectPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Automatas\\Proyecto_Automatas.csproj",
       "packagesPath": "C:\\Users\\omarv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Proyecto Final\\Proyecto_Automatas\\obj\\",
+      "outputPath": "C:\\Users\\omarv\\OneDrive\\Escritorio\\Automatas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\omarv\\AppData\\Roaming\\NuGet\\NuGet.Config",
